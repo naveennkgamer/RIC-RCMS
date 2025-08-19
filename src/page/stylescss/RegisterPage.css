@@ -1,0 +1,142 @@
+.business-form-container {
+    width: 100%;
+
+    background-color: #fff;
+}
+
+.business-form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    border-top: 1px solid #B2BBCE;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #B2BBCE;
+}
+
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.form-group label span {
+    color: red;
+}
+
+input,
+select {
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.hint {
+    color: #f57c00;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.phone-wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+.prefix {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 6px 0 0 6px;
+    font-size: 14px;
+}
+
+.prefix img {
+    width: 20px;
+    height: 14px;
+}
+
+.phone-wrapper input {
+    flex: 1;
+    border-radius: 0 6px 6px 0;
+    border-left: none;
+}
+
+.descrpan {
+    display: flex;
+    align-items: center;
+    background-color: #DAF1E5;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.descrpan img {
+    width: 40px;
+    height: 35px;
+    background: linear-gradient(to right, #005B2B, #03AA53);
+    padding: 15px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.business-form-grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+}
+
+/* responsive */
+
+@media screen and (max-width: 900px) {
+    .business-form-grid {
+        grid-template-columns: none;
+    }
+
+    .business-form-grid2 {
+        grid-template-columns: none;
+    }
+}
+
+
+/* registrationpage2-css */
+
+.address-form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #B2BBCE;
+}
+
+/* responsive */
+@media screen and (max-width: 900px) {
+    .address-form-grid {
+        grid-template-columns: none;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+    .addresstitle {
+        flex-direction: column;
+        gap: 0px;
+    }
+}
