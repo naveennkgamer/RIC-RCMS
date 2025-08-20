@@ -13,9 +13,9 @@
 import './App.css';
 import Loginpage from './page/loginpage';
 import Forgotpinpage from './page/forgotpinpage';
-import Otpverification from './page/otpverification';
-import Resetpin from './page/Resetpin';
-import Setpin from './page/Setnewpin';
+import Otpverification from './page/otpverificationpage';
+import Resetpin from './page/Resetpinpage';
+import Setpin from './page/Setnewpinpage';
 import RegisterPage from './page/registerpage';
 import RegisterPage2 from './page/RegisterPage2';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';

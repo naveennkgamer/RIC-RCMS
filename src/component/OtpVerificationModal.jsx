@@ -12,7 +12,7 @@ import {
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
-const OtpVerificationModal = ({ open, onClose, onVerify, mobile = '******879' }) => {
+const OtpVerificationModal = ({ open, onClose, onVerify, mobile = '******787' }) => {
     const [otp, setOtp] = useState(['', '', '', '']);
     const [timer, setTimer] = useState(30);
 
@@ -77,8 +77,8 @@ const OtpVerificationModal = ({ open, onClose, onVerify, mobile = '******879' })
         >
             <DialogTitle sx={{ mb: 2, padding: "0px" }}>
                 <Box display="flex" justifyContent="space-between" alignItems="center">
-                    <Typography variant="h6" fontWeight="bold">OTP Verification</Typography>
-                    <IconButton onClick={handleClose}>
+                    <Typography sx={{ fontFamily: "Manrope", fontWeight: "400", fontSize: "18px" }}>OTP Verification</Typography>
+                    <IconButton onClick={handleClose} sx={{ color: "black" }}>
                         <CloseIcon />
                     </IconButton>
                 </Box>
@@ -93,8 +93,8 @@ const OtpVerificationModal = ({ open, onClose, onVerify, mobile = '******879' })
                     borderTop: "1px solid #E4E4E4"
                 }}
             >
-                <Typography variant="body1" sx={{ mb: 2, paddingTop: "20px" }}>
-                    Enter the OTP sent to the mobile number <b>(+91 {mobile})</b>
+                <Typography variant="body1" sx={{ mb: 2, paddingTop: "20px", fontFamily: "Manrope", fontWeight: "lighter" }}>
+                    Enter the OTP sent to the mobile number <b style={{ fontFamily: "Manrope", fontWeight: "500" }}>(+91 {mobile})</b>
                 </Typography>
 
                 <Box display="flex" gap="10px" marginBottom="10px">
@@ -120,7 +120,7 @@ const OtpVerificationModal = ({ open, onClose, onVerify, mobile = '******879' })
                     ))}
                 </Box>
 
-                <Typography sx={{ textAlign: 'left' }}>
+                <Typography sx={{ textAlign: 'left', fontFamily: "Manrope", fontWeight: "normal", fontSize: "14px" }}>
                     Resend OTP in <span style={{ color: '#E97C00', fontWeight: '500' }}>{timer}s</span>
                 </Typography>
             </DialogContent>
@@ -131,7 +131,7 @@ const OtpVerificationModal = ({ open, onClose, onVerify, mobile = '******879' })
                     fullWidth
                     sx={{
                         backgroundColor: '#3A2B65',
-                        fontWeight: 'bold',
+                        fontFamily: "Manrope", fontWeight: "400",
                         py: 1.2,
                         borderRadius: 2,
                         mt: 1

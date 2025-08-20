@@ -24,7 +24,7 @@ const Otpverification = ({ mobile = '******787' }) => {
                 setTimer(prev => {
                     if (prev <= 1) {
                         clearInterval(interval);
-                        setShowResend(true); // show "Resend OTP" after 30s
+                        setShowResend(true);
                         return 0;
                     }
                     return prev - 1;
@@ -60,9 +60,9 @@ const Otpverification = ({ mobile = '******787' }) => {
     };
 
     const handleResendOtp = () => {
-        setOtp(['', '', '', '']);   // clear OTP
-        setTimer(30);               // reset timer
-        setShowResend(false);       // hide "Resend OTP" and start countdown again
+        setOtp(['', '', '', '']);
+        setTimer(30);
+        setShowResend(false);
     };
 
     return (

@@ -38,12 +38,12 @@ const RegistrationSuccessDialog = ({ open, onClose, onLogin }) => {
                 </Box>
 
                 {/* Title */}
-                <Typography variant="h6" fontWeight="bold" gutterBottom>
+                <Typography sx={{ fontFamily: "Manrope", fontWeight: "400" }} variant="h6" fontWeight="bold" gutterBottom>
                     Registration Successful!
                 </Typography>
 
                 {/* Subtext */}
-                <Typography sx={{ mb: 3 }}>
+                <Typography sx={{ mb: 3, fontFamily: "Manrope", fontWeight: "normal" }}>
                     Registration completed. Welcome aboard! <br />
                     We’re excited to have you with us
                 </Typography>
@@ -58,19 +58,19 @@ const RegistrationSuccessDialog = ({ open, onClose, onLogin }) => {
                         textAlign: 'left'
                     }}
                 >
-                    <Typography sx={{ fontSize: 14 }}>
+                    <Typography sx={{ fontSize: 14, fontFamily: "Manrope", fontWeight: "normal" }}>
                         You’ll receive a 4-digit PIN via SMS to log in. After your first login, you can set your own PIN.
                     </Typography>
                 </Box>
 
                 {/*  Login button */}
-                <DialogActions sx={{ justifyContent: 'center' }}>
-                    <NavLink to="/">  <Button
+                <DialogActions sx={{ justifyContent: 'center', borderTop: "1px solid #E4E4E4", paddingTop: "15px" }}>
+                    <NavLink to="/" style={{ width: "100%" }}>  <Button
                         variant="contained"
                         onClick={onLogin}
                         sx={{
                             backgroundColor: '#3A2B65',
-                            fontWeight: 'bold',
+                            fontFamily: "Manrope", fontWeight: "400",
                             px: 5,
                             py: 1.2,
                             borderRadius: 2,
