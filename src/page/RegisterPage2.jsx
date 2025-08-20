@@ -395,7 +395,7 @@ const RegisterPage = () => {
                         </div>
                         <div style={{ marginTop: "10px", marginBottom: "10px", display: "flex", alignItems: "center", gap: "10px" }}>
                             <input
-                                type="checkbox"
+                                type="radio"
                                 checked={sameAsPrimary2}
                                 onChange={handleSameAsPrimaryToggle2}
                                 id="sameAsPrimary2"
@@ -406,7 +406,7 @@ const RegisterPage = () => {
                         </div>
                         <div style={{ marginTop: "10px", marginBottom: "10px", display: "flex", alignItems: "center", gap: "10px" }}>
                             <input
-                                type="checkbox"
+                                type="radio"
                                 id="sameAsCommunication"
                                 checked={sameAsCommunication}
                                 onChange={handleSameAsCommunicationToggle}
